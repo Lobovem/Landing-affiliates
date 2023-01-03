@@ -1,2 +1,11 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.header {
+
+  &__wrap {}
+
+  &__logo-box {}
+
+  &__logo {}
+}

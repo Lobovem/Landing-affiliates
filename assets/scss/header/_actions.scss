@@ -1,0 +1,11 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.actions {
+
+  &__navbar {}
+
+  &__access {}
+
+  &__access-link {}
+}

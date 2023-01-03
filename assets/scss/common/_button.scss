@@ -1,0 +1,57 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.button {
+  font-family: 'Inter';
+  font-style: normal;
+
+  &__main {
+    display: block;
+    cursor: pointer;
+    width: 131px;
+    min-height: 41px;
+    font-weight: $font-weight-700;
+    font-size: $font-size-14;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+    background: #A89C86;
+  }
+
+  &__first {
+    display: block;
+    cursor: pointer;
+    width: 300px;
+    min-height: 72px;
+    font-weight: 700;
+    font-size: $font-size-18;
+    line-height: 22px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; //TODO пересмотреть повторяющиеся свойства. You need will see reapet styles
+
+    color: #000917;
+    background: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
+  }
+
+  &__second {
+    display: block;
+    cursor: pointer;
+    width: 155px;
+    min-height: 45px;
+    line-height: 17px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $color-black;
+
+  }
+
+
+}
