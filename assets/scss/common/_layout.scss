@@ -2,13 +2,13 @@
 @use "../mixins" as *;
 
 .layout {
-  &__layout-large {
+  &__large {
     width: min(100% - 40px, 1720px);
 
     margin-inline: auto;
   }
 
-  &__layout-main {
+  &__main {
     width: min(100% - 40px, 1720px);
 
     margin-inline: auto;
