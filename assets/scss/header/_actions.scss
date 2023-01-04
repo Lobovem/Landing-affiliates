@@ -16,6 +16,14 @@
       gap: $gap-lg;
 
     }
+
+    @include md {
+      gap: 25px;
+    }
+
+    @include xx {
+      gap: 15px;
+    }
   }
 
   &__access-link {
@@ -35,6 +43,16 @@
       font-size: $font-size-12;
       line-height: 15px;
       color: #000917;
+    }
+
+    @include md {
+      font-size: $font-size-10;
+      line-height: 12px;
+    }
+
+    @include xx {
+      font-size: $font-size-9;
+      line-height: 11px;
     }
   }
 }

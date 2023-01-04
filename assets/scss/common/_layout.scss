@@ -3,14 +3,25 @@
 
 .layout {
   &__large {
-    width: min(100% - 40px, 1720px);
+    width: min(100% - 80px, 1720px);
 
     margin-inline: auto;
+
+    @include md {
+      width: min(100% - 40px, 1720px);
+
+    }
+
+    @include xx {
+      width: min(100% - 20px, 1720px);
+
+    }
   }
 
   &__main {
     width: min(100% - 40px, 1290px);
 
     margin-inline: auto;
+
   }
 }

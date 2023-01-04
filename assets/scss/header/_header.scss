@@ -10,6 +10,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include xx {
+      gap: 0;
+    }
+
   }
 
   &__navbar-box {
@@ -26,5 +30,14 @@
 
   &__logo {
     max-height: 44px;
+
+    @include md {
+      max-height: 33px;
+    }
+
+    @include xx {
+      max-height: 26px;
+
+    }
   }
 }
