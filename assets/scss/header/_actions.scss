@@ -8,9 +8,9 @@
   &__navbar {}
 
   &__access {
-    margin-left: auto;
     display: flex;
     gap: 45px;
+
 
     @include xl {
       gap: $gap-lg;
