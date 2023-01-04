@@ -3,45 +3,45 @@
 
 .navbar {
 
+
+  @include xl {
+    // transition: left 0.3 ease 0s;
+
+
+  }
+
   &__list {
+
+
     @include unlist;
-    display: flex;
-    gap: $gap;
+
+
 
     @include ul {
       gap: 15px;
     }
 
-    @include xl {
-      display: none;
+    @include xl-min {
+      display: flex;
+      gap: $gap;
     }
 
     @include xl {
-      position: absolute;
-      top: 0;
-      right: -100%;
+      // display: none;
+    }
 
-      display: none;
+    @include xl {
 
-      width: 300px;
-      height: 100vh;
-      padding: $gap;
-
-      background-color: $color-white;
-      transition: left 0.3s ease 0s;
-
-      @include xx {
-        width: 250px;
-      }
+      @include xx {}
     }
 
     &.active {
       @include xl {
-        display: flex;
-        flex-direction: column;
-        gap: $gap-sm;
-        right: -5%;
-        transition: left 0.3s ease 0s;
+        // display: flex;
+        // flex-direction: column;
+        // gap: $gap-sm;
+        // right: -5%;
+        // transition: left 0.3s ease 0s;
 
       }
     }
@@ -56,10 +56,18 @@
     font-size: $font-size-14;
     line-height: 17px;
 
-    text-align: center;
     text-transform: capitalize;
 
     color: #171717;
+
+    @include xl-min {
+      text-align: center;
+
+    }
+
+    @include xl {
+      color: white;
+    }
   }
 }
 
@@ -141,6 +149,32 @@
       top: 6px;
 
       transform: rotate(-135deg);
+    }
+  }
+}
+
+
+.menu__list {
+
+  @include xl {}
+}
+
+.menu__body {
+
+  @include xl {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease 0s;
+    transform: translate(100%, 0);
+
+    &.active {
+      transform: translate(0, 0);
+
     }
   }
 }

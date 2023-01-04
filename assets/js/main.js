@@ -1,7 +1,7 @@
 // управление меню
 const menuBtn = document.querySelector('.navbar__burger');
 const menuList = document.querySelector('.navbar__list');
-const body = document.querySelector('body');
+const body = document.querySelector('.navbar');
 
 menuBtn.addEventListener('click', (e) => {
   menuBtn.classList.toggle('active');
