@@ -59,8 +59,22 @@
     letter-spacing: 0.05em;
     text-transform: uppercase; //TODO пересмотреть повторяющиеся свойства. You need will see reapet styles
 
-    color: #000917;
+    color: $color-black;
     background: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
+
+    @include ul {
+      width: 268px;
+      min-height: 62px;
+
+      font-size: $font-size-16;
+      line-height: 19px;
+    }
+
+    @include md {
+      width: 222px;
+      min-height: 45px;
+    }
+
   }
 
   &__second {

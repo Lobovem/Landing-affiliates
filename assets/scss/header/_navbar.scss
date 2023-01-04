@@ -8,6 +8,10 @@
     display: flex;
     gap: $gap;
 
+    @include ul {
+      gap: 15px;
+    }
+
     @include xl {
       display: none;
     }

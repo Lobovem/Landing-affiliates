@@ -11,6 +11,10 @@
     display: flex;
     gap: 45px;
 
+    @include ul {
+      gap: 40px;
+
+    }
 
     @include xl {
       gap: $gap-lg;

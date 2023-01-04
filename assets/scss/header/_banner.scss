@@ -7,6 +7,23 @@
 
   &__text-box {
     padding-top: 206px;
+
+    @include ul {
+      padding-top: 184px;
+    }
+
+    @include xl {
+      padding-top: 94px;
+    }
+
+    @include md {
+      padding-top: 70px;
+
+    }
+
+    @include sm {
+      padding-top: 46px;
+    }
   }
 
 
@@ -18,15 +35,64 @@
     color: #000917;
     margin-bottom: 24px;
 
+    @include ul {
+      font-size: $font-size-54;
+      line-height: 120%;
+
+      color: #171717;
+      max-width: 600px;
+    }
+
+    @include xl {
+      font-size: $font-size-40;
+      line-height: 120%;
+      max-width: 402px;
+    }
+
+    @include md {
+      font-size: $font-size-32;
+      line-height: 120%;
+      max-width: 360px;
+    }
+
+    @include sm {
+      font-size: $font-size-24;
+      line-height: 120%;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 270px;
+    }
+
   }
 
-  &__button {}
+  &__button {
+    @include sm {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 
   &__foto-box {
     position: relative;
 
     padding-top: 40px;
-    padding-right: 50px
+
+    padding-right: 50px;
+
+    @include ul {
+      padding-right: 10px;
+      padding-top: 128px;
+    }
+
+    @include xl {
+      padding-top: 50px;
+    }
+
+    @include md {
+      margin-right: -84px;
+      padding-right: 0;
+    }
   }
 
   &__decor-header {
@@ -39,11 +105,51 @@
     top: -380px;
     border-radius: 650px;
     background: #FFEFD0;
+
+    @include ul {
+      width: 745px;
+      height: 745px;
+      right: -160px;
+      top: -242px;
+
+    }
+
+    @include xl {
+      right: -340px;
+      top: -380px;
+
+    }
+
+    @include md {
+      width: 352px;
+      height: 352px;
+      right: 0;
+      top: -108px;
+
+
+    }
+
   }
 
   &__foto {
 
     // position: relative;
-    z-index: 1;
+    // z-index: 1;
+
+    @include ul {
+      max-width: 616px;
+    }
+
+    @include xl {
+      max-width: 426px;
+    }
+
+    @include md {
+      max-width: 300px;
+    }
+
+    @include sm {
+      display: none;
+    }
   }
 }
