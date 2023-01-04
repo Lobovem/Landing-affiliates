@@ -46,7 +46,9 @@
   }
 
   &__first {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 300px;
     min-height: 72px;
@@ -54,7 +56,6 @@
     font-size: $font-size-18;
     line-height: 22px;
 
-    text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase; //TODO пересмотреть повторяющиеся свойства. You need will see reapet styles
 

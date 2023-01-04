@@ -2,8 +2,13 @@
 @use "../mixins" as *;
 
 .header {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 750px;
 
   &__wrap {
+    position: relative;
+    z-index: 1;
     display: flex;
     gap: $gap-lg;
     padding-top: 20px;
@@ -40,4 +45,10 @@
 
     }
   }
+
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

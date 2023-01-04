@@ -1,0 +1,49 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+
+
+.banner {
+
+  &__text-box {
+    padding-top: 206px;
+  }
+
+
+  &__title {
+    font-weight: $font-weight-400;
+    font-size: $font-size-74;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #000917;
+    margin-bottom: 24px;
+
+  }
+
+  &__button {}
+
+  &__foto-box {
+    position: relative;
+
+    padding-top: 40px;
+    padding-right: 50px
+  }
+
+  &__decor-header {
+    position: absolute;
+    z-index: -1;
+    width: 1060px;
+    height: 1060px;
+    // right: -125px;
+    right: -200px;
+    top: -380px;
+    border-radius: 650px;
+    background: #FFEFD0;
+  }
+
+  &__foto {
+
+    // position: relative;
+    z-index: 1;
+  }
+}
