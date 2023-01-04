@@ -64,6 +64,12 @@
       max-width: 270px;
     }
 
+    @include xx {
+
+      margin-bottom: 14px;
+
+    }
+
   }
 
   &__button {
@@ -127,6 +133,11 @@
       top: -108px;
 
 
+    }
+
+    @include sm {
+      right: -320px;
+      top: -270px;
     }
 
   }

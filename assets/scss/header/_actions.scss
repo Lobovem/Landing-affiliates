@@ -9,6 +9,7 @@
 
   &__access {
     display: flex;
+    align-items: center;
     gap: 45px;
 
     @include ul {
