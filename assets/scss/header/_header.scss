@@ -3,7 +3,24 @@
 
 .header {
 
-  &__wrap {}
+  &__wrap {
+    display: flex;
+    gap: $gap-lg;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__navbar-box {
+    display: flex;
+    gap: 58px;
+
+    @include ul {
+      gap: 38px;
+
+    }
+  }
 
   &__logo-box {}
 

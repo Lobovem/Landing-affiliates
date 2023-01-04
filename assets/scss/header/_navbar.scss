@@ -3,9 +3,28 @@
 
 .navbar {
 
-  &__list {}
+  &__list {
+    @include unlist;
+    display: flex;
+    gap: $gap;
+
+    @include xl {
+      display: none;
+    }
+  }
 
   &__item {}
 
-  &__link {}
+  &__link {
+    display: block;
+    padding: 15px;
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    line-height: 17px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #171717;
+  }
 }
