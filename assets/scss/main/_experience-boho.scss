@@ -7,14 +7,23 @@
   &__wrap {
     display: flex;
     gap: 180px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 0;
+
+    @include ul {
+      padding: 50px 0 34px 0;
+      gap: 100px;
+    }
   }
 
   &__info {
     max-width: 585px;
 
     padding-top: 50px;
+
+    @include ul {
+      max-width: 452px;
+      padding-top: 0;
+    }
 
   }
 
@@ -28,6 +37,12 @@
     text-transform: uppercase;
     color: $color-black;
     margin-bottom: 36px;
+
+    @include ul {
+      font-size: $font-size-24;
+      line-height: 120%;
+      margin-bottom: 20px;
+    }
   }
 
   &__desc {
@@ -36,6 +51,11 @@
     line-height: 150%;
     color: $color-black;
     margin-bottom: 36px;
+
+    @include ul {
+      font-size: $font-size-16;
+      margin-bottom: 20px;
+    }
   }
 
   &__box {}
@@ -46,5 +66,9 @@
 
   &__img {
     height: 700px;
+
+    @include ul {
+      height: 540px;
+    }
   }
 }
