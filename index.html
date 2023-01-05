@@ -67,25 +67,33 @@
 
       <div class="header__sale sale">
         <div class="sale__wrap">
-          <div class="sale__item sale__item--mobile">
-            <h2 class="sale__item-title">CPA</h2>
-            <p class="sale__desc">Huge CPA Deals</p>
-            <img class="sale__img sale__img--pc" src="assets/img/sale-1.png" alt="sale-1.png">
-            <img class="sale__img sale__img--laptop" src="assets/img/sale-1-1.png" alt="sale-1-1.png">
 
+          <div class="swiper">
+            <div class="swiper-wrapper slider__wrap">
+
+              <div class="swiper-slide sale__item sale__item--mobile">
+                <h2 class="sale__item-title">CPA</h2>
+                <p class="sale__desc">Huge CPA Deals</p>
+                <img class="sale__img sale__img--pc" src="assets/img/sale-1.png" alt="sale-1.png">
+                <img class="sale__img sale__img--laptop" src="assets/img/sale-1-1.png" alt="sale-1-1.png">
+              </div>
+
+              <div class="swiper-slide sale__item">
+                <h2 class="sale__item-title">Hybrid</h2>
+                <p class="sale__desc">The best combination of Revenue Share and CPA</p>
+                <img class="sale__img" src="assets/img/sale-2.png" alt="sale-2.png">
+              </div>
+
+              <div class="swiper-slide sale__item">
+                <h2 class="sale__item-title">Revenue Share</h2>
+                <p class="sale__desc">Up to 45% with no negative carry over</p>
+                <img class="sale__img" src="assets/img/sale-3.png" alt="sale-3.png">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
 
-          <div class="sale__item">
-            <h2 class="sale__item-title">Hybrid</h2>
-            <p class="sale__desc">The best combination of Revenue Share and CPA</p>
-            <img class="sale__img" src="assets/img/sale-2.png" alt="sale-2.png">
-          </div>
-
-          <div class="sale__item">
-            <h2 class="sale__item-title">Revenue Share</h2>
-            <p class="sale__desc">Up to 45% with no negative carry over</p>
-            <img class="sale__img" src="assets/img/sale-3.png" alt="sale-3.png">
-          </div>
         </div>
 
         <a class="sale__button button__second button__second--laptop" href="">sign up</a>
@@ -97,6 +105,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/slider.js"></script>
 </body>
 

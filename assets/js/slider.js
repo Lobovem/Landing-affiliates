@@ -1,5 +1,13 @@
 const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
+  enabled: true,
+  breakpoints: {
+    576: {
+      enabled: false,
+      slidesPerView: 3,
+      speed: 800,
+    },
+  },
 
   // Optional parameters
   // direction: 'vertical',
