@@ -9,6 +9,8 @@
     justify-content: space-around;
     margin-bottom: 50px;
     gap: 120px;
+    position: relative;
+    z-index: 0;
 
     @include ul {
       justify-content: center;
