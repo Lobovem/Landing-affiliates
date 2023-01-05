@@ -95,6 +95,39 @@
     background: $color-black;
     color: $color-white;
 
+    &--mobile {
+
+      @include sm-min {
+        display: none;
+      }
+
+      @include sm {
+        width: 142px;
+        min-height: 45px;
+        font-size: $font-size-14;
+        line-height: 17px;
+
+      }
+    }
+
+    &--laptop {
+      @include sm {
+        display: none;
+      }
+    }
+
+    @include ul {
+      width: 155px;
+      min-height: 45px;
+      font-size: $font-size-14;
+      line-height: 17px;
+    }
+
+    @include md {
+      width: 265px;
+      min-height: 45px;
+    }
+
   }
 
 
