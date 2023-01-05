@@ -8,6 +8,10 @@
     justify-content: space-between;
   }
 
+  @include sm {
+    flex-direction: column;
+  }
+
   &__list {
     font-weight: $font-weight-400;
     font-size: $font-size-18;
@@ -47,6 +51,10 @@
     @include ul {
       margin-bottom: 30px;
     }
+
+    @include sm {
+      margin-bottom: 18px;
+    }
   }
 
   &__title {
@@ -76,6 +84,10 @@
     font-size: $font-size-14;
     line-height: 150%;
     color: $color-white;
+
+    @include sm {
+      width: 43px;
+    }
   }
 
   &__link {
@@ -92,11 +104,19 @@
       @include md {
         display: none;
       }
+
+      @include sm {
+        display: block;
+      }
     }
 
     &--mobile {
 
       @include md-min {
+        display: none;
+      }
+
+      @include sm {
         display: none;
       }
     }

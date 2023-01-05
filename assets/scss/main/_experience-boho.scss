@@ -23,6 +23,10 @@
       flex-direction: column;
       padding: 56px 0 0 0;
     }
+
+    @include sm {
+      padding: 14px 0 16px 0;
+    }
   }
 
   &__info {
@@ -98,12 +102,15 @@
       margin-right: auto;
       margin-bottom: 40px;
     }
+
+    @include sm {
+      margin-bottom: 24px;
+    }
   }
 
   &__box {}
 
   &__img-box {
-    // width: 100px;
 
     @include xl {
       padding-top: 26px;
@@ -113,6 +120,10 @@
       margin-bottom: 60px;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    @include sm {
+      margin-bottom: 16px;
     }
   }
 
@@ -131,6 +142,11 @@
       height: 415px;
       width: 450px;
       order: 0;
+    }
+
+    @include sm {
+      width: 300px;
+      height: 276px;
     }
   }
 }
