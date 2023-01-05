@@ -1,0 +1,17 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.experience-boho {
+
+  &__wrap {}
+
+  &__info {}
+
+  &__title {}
+
+  &__desc {}
+
+  &__box {}
+
+  &__img {}
+}

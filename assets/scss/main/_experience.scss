@@ -1,0 +1,17 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.experience {
+
+  &__list {}
+
+  &__item {}
+
+  &__country-box {}
+
+  &__title {}
+
+  &__country-item {}
+
+  &__link {}
+}
