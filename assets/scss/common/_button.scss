@@ -78,17 +78,22 @@
   }
 
   &__second {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    width: 155px;
-    min-height: 45px;
+    width: 199px;
+    min-height: 62px;
     line-height: 17px;
 
+    font-weight: $font-weight-700;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-
-    color: $color-black;
+    background: $color-black;
+    color: $color-white;
 
   }
 

@@ -58,11 +58,15 @@
   &__banner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 212px;
 
     @include sm {
       flex-direction: column;
       align-items: center;
     }
   }
+
+  &__sale {}
+
 
 }
