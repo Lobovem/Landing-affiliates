@@ -2,16 +2,49 @@
 @use "../mixins" as *;
 
 .experience-boho {
+  background: #E3C6AD;
 
-  &__wrap {}
+  &__wrap {
+    display: flex;
+    gap: 180px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 
-  &__info {}
+  &__info {
+    max-width: 585px;
 
-  &__title {}
+    padding-top: 50px;
 
-  &__desc {}
+  }
+
+  &__title {
+    font-weight: $font-weight-700;
+    font-size: $font-size-36;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.46em;
+    text-transform: uppercase;
+    color: $color-black;
+    margin-bottom: 36px;
+  }
+
+  &__desc {
+    font-weight: $font-weight-400;
+    font-size: $font-size-18;
+    line-height: 150%;
+    color: $color-black;
+    margin-bottom: 36px;
+  }
 
   &__box {}
 
-  &__img {}
+  &__img-box {
+    width: 100px;
+  }
+
+  &__img {
+    height: 700px;
+  }
 }
