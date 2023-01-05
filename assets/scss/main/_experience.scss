@@ -26,6 +26,10 @@
       margin-bottom: 30px;
     }
 
+    @include md {
+      margin-bottom: 14px;
+      margin-left: 22px;
+    }
   }
 
   &__item {}
