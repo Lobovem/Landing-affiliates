@@ -40,8 +40,6 @@
     }
   }
 
-  &__logo-box {}
-
   &__logo {
     max-height: 44px;
 
@@ -65,9 +63,7 @@
     }
 
     @include xl {
-
       margin-bottom: 120px;
-
     }
 
     @include md {
@@ -80,8 +76,4 @@
       margin-bottom: 4px;
     }
   }
-
-  &__sale {}
-
-
 }
