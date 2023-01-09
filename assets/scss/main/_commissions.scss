@@ -1,0 +1,57 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.commissions {
+
+  &__title {
+    font-weight: $font-weight-400;
+    font-size: $font-size-54;
+    line-height: 120%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-black;
+    padding: 100px 0 86px 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $gap-xl;
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    padding: 40px;
+    border: 1px solid #BCBCBC;
+    border-radius: 45px;
+    min-height: 278px;
+
+    &--bg {
+      background: linear-gradient(120.71deg, #E3C6AD 5.99%, #6DBC51 94.4%);
+    }
+  }
+
+  &__desc {
+    font-weight: $font-weight-500;
+    font-size: $font-size-96;
+    line-height: 120%;
+
+    span {
+      font-size: $font-size-18;
+      opacity: 0.5;
+    }
+  }
+
+  &__footer {
+    font-weight: $font-weight-700;
+    font-size: $font-size-24;
+    line-height: 120%;
+
+    color: $color-black;
+  }
+
+  &__item--bg {}
+}
