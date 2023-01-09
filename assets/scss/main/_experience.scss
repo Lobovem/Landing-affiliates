@@ -3,13 +3,17 @@
 
 .experience {
 
-  @include md {
+  @media (max-width: 920px) {
     display: flex;
     justify-content: space-between;
+
   }
+
+  @include md {}
 
   @include sm {
     flex-direction: column;
+    display: block;
   }
 
   &__list {
@@ -34,10 +38,13 @@
       margin-bottom: 30px;
     }
 
-    @include md {
+    @media (max-width: 920px) {
       margin-bottom: 14px;
       margin-left: 22px;
+
     }
+
+    @include md {}
 
   }
 
@@ -138,20 +145,26 @@
     }
 
     &--pc {
-      @include md {
+      @media (max-width: 920px) {
+
         display: none;
       }
 
+
+      @include md {}
+
       @include sm {
-        display: block;
+        display: inline;
       }
     }
 
     &--mobile {
-
-      @include md-min {
+      @media (min-width: 920px) {
         display: none;
+
       }
+
+      @include md-min {}
 
       @include sm {
         display: none;

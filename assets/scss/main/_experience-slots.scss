@@ -3,6 +3,7 @@
 
 .experience-slots {
   background: #000917;
+  overflow: hidden;
 
   &__wrap {
     display: flex;
@@ -14,8 +15,22 @@
       gap: 90px;
     }
 
-    @include xl {
-      gap: 74px;
+    @media (max-width: 1350px) {
+      padding: 74px 0;
+
+    }
+
+
+    @media (max-width: 920px) {
+      flex-direction: column;
+      padding: 112px 0 10px 0;
+      gap: 66px;
+
+    }
+
+    @include sm {
+      padding: 44px 0 20px 0;
+      gap: 32px;
     }
   }
 
@@ -43,9 +58,11 @@
       margin-bottom: 10px;
     }
 
-    @include md {
+
+    @media (max-width: 920px) {
       text-align: center;
       justify-content: center;
+
     }
   }
 
@@ -66,8 +83,9 @@
       margin-bottom: 30px;
     }
 
-    @include md {
-      max-width: 466px;
+    @media (max-width: 920px) {
+
+      padding: 0 40px;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -76,12 +94,15 @@
 
     @include sm {
       margin-bottom: 24px;
+      padding: 0;
     }
   }
 
   &__box {}
 
   &__img-box {
+    position: relative;
+    z-index: 1;
 
     @include ul-min {
       margin-left: 60px;
@@ -94,17 +115,123 @@
 
     @media (max-width: 1350px) {
       margin-left: -180px;
+      margin-top: 80px;
+    }
+
+
+    @media (max-width: 920px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      max-width: 546px;
+
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 506.86px;
+      height: 649.01px;
+      left: -150px;
+      top: 100px;
+
+      background: #F185FB;
+      opacity: 0.2;
+      filter: blur(127.5px);
+      transform: rotate(-20.71deg);
+      z-index: -1;
+
+      @include ul {
+        width: 352px;
+        height: 452px;
+        left: -100px;
+        top: 60px;
+      }
+
+      @media (max-width:1350px) {
+        left: 50px;
+        top: -50px;
+
+        filter: blur(93.3119px);
+      }
+
+      @media (max-width:920px) {
+        left: -150px;
+        top: -60px;
+
+      }
+
+      @include sm {
+        width: 218.3px;
+        height: 279.52px;
+        left: -110px;
+        top: -36px;
+
+        filter: blur(58.9644px);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 772px;
+      height: 504px;
+      right: -270px;
+      top: 200px;
+
+      background: #F185FB;
+      opacity: 0.2;
+      filter: blur(127.5px);
+      transform: rotate(-22.48deg);
+      z-index: -1;
+
+      @include ul {
+        width: 538px;
+        height: 352px;
+
+        right: -170px;
+        top: 190px;
+
+      }
+
+      @media (max-width:1350px) {
+        right: -300px;
+        top: 100px;
+
+
+        filter: blur(93.3119px);
+      }
+
+      @media (max-width:920px) {
+        right: -260px;
+        top: 60px;
+
+      }
+
+      @include sm {
+        width: 332.08px;
+        height: 217.06px;
+        right: -154px;
+        top: 10px;
+
+        filter: blur(58.9644px);
+      }
     }
   }
 
   &__img {
     @include ul {
-      width: 750px;
+      max-width: 750px;
     }
 
     @media (max-width: 1350px) {
-      width: 660px;
+      max-width: 660px;
     }
+
+    @media (max-width: 920px) {
+      width: 100%;
+    }
+
 
 
   }
