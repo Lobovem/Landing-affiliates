@@ -64,6 +64,10 @@
       margin-bottom: 30px;
     }
 
+    @include md {
+      max-width: 276px;
+    }
+
     @include sm {
       margin-bottom: 18px;
     }
@@ -106,7 +110,7 @@
       color: $color-black;
     }
 
-    @include sm {
+    @include md {
       width: 43px;
     }
   }

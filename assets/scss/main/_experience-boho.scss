@@ -17,13 +17,13 @@
 
     @include xl {
       padding: 74px 0 60px 0;
-      gap: $gap;
+      gap: 46px;
     }
 
     @media (max-width: 920px) {
       flex-direction: column;
       padding: 56px 0 0 0;
-
+      gap: 20px;
 
     }
 
