@@ -6,6 +6,8 @@
     width: min(100% - 200px, 1720px);
 
     margin-inline: auto;
+    overflow: hidden;
+
 
     @include xl {
       width: min(100% - 80px, 1720px);
