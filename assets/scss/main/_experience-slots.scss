@@ -1,0 +1,111 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.experience-slots {
+  background: #000917;
+
+  &__wrap {
+    display: flex;
+    gap: 104px;
+    padding: 120px 0 72px 0;
+
+    @include ul {
+      padding: 50px 0;
+      gap: 90px;
+    }
+
+    @include xl {
+      gap: 74px;
+    }
+  }
+
+  &__info {}
+
+  &__title {
+    font-weight: $font-weight-700;
+    font-size: $font-size-36;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.46em;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 36px;
+
+    @include ul {
+      font-size: $font-size-24;
+      line-height: 120%;
+      margin-bottom: 20px;
+    }
+
+    @include xl {
+      font-size: $font-size-20;
+      margin-bottom: 10px;
+    }
+
+    @include md {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__desc {
+    font-weight: $font-weight-400;
+    font-size: $font-size-18;
+    line-height: 150%;
+    color: $color-white;
+    margin-bottom: 36px;
+
+    @include ul {
+      font-size: $font-size-16;
+      margin-bottom: 20px;
+    }
+
+    @include xl {
+      font-size: $font-size-14;
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      max-width: 466px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+
+    @include sm {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__box {}
+
+  &__img-box {
+
+    @include ul-min {
+      margin-left: 60px;
+
+    }
+
+    @include ul {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 1350px) {
+      margin-left: -180px;
+    }
+  }
+
+  &__img {
+    @include ul {
+      width: 750px;
+    }
+
+    @media (max-width: 1350px) {
+      width: 660px;
+    }
+
+
+  }
+}

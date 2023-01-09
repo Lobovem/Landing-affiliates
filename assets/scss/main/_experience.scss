@@ -20,6 +20,10 @@
     margin-bottom: 36px;
     margin-left: 28px;
 
+    &--alt {
+      color: $color-white;
+    }
+
     @include ul {
       font-size: $font-size-16;
       margin-bottom: 20px;
@@ -34,6 +38,7 @@
       margin-bottom: 14px;
       margin-left: 22px;
     }
+
   }
 
   &__item {}
@@ -63,6 +68,10 @@
     line-height: 150%;
     margin-bottom: 15px;
 
+    &--alt {
+      color: $color-white;
+    }
+
     @include ul {
       font-size: $font-size-16;
     }
@@ -85,6 +94,11 @@
     line-height: 150%;
     color: $color-white;
 
+    &--alt {
+      background: #F6F1F7;
+      color: $color-black;
+    }
+
     @include sm {
       width: 43px;
     }
@@ -95,6 +109,29 @@
     font-size: $font-size-18;
     line-height: 200%;
     text-decoration-line: underline;
+
+    &--alt {
+      position: relative;
+      background: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      text-decoration: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center bottom 1px;
+        background-size: 100% 1px;
+        background-image: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
+      }
+    }
 
     @include xl {
       font-size: $font-size-14;
