@@ -3,6 +3,7 @@
 
 .experience-boho {
   background: #E3C6AD;
+  overflow-x: hidden;
 
   &__wrap {
     display: flex;
@@ -112,6 +113,47 @@
 
   &__img-box {
     position: relative;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: #FFFFFF;
+      filter: blur(127.5px);
+      transform: rotate(15deg);
+      width: 1000px;
+      height: 250px;
+      right: -140px;
+      top: 350px;
+      z-index: -1;
+
+      @include ul {
+        width: 800px;
+        top: 250px;
+        height: 150px;
+        right: -100px;
+        transform: rotate(10deg);
+
+      }
+
+      @include xl {
+        width: 700px;
+        height: 100px;
+        top: 280px;
+      }
+
+      @include md {
+        top: 250px;
+      }
+
+      @include sm {
+        width: 500px;
+        height: 50px;
+        top: 150px;
+        transform: rotate(15deg);
+
+      }
+    }
 
     &::after {
       position: absolute;
