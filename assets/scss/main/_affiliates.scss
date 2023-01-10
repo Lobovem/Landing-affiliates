@@ -1,0 +1,65 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.affiliates {
+
+  &__title-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 88px 40px 78px 40px;
+  }
+
+  &__arrow-box {
+    display: flex;
+
+  }
+
+  &__title {
+    font-weight: $font-weight-400;
+    font-size: $font-size-54;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-black;
+
+  }
+
+  &__arrow-right {
+    width: 58px;
+  }
+
+  &__arrow-left {
+    width: 58px;
+    opacity: 0.4;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-right: 88px;
+
+  }
+
+  &__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 140px 40px;
+    gap: 46px;
+
+  }
+
+  &__item {}
+
+  &__item-title {
+    font-weight: $font-weight-400;
+    font-size: $font-size-24;
+    line-height: 160%;
+    color: $color-black;
+    margin-bottom: 20px;
+
+  }
+
+  &__item-link {
+    font-weight: $font-weight-400;
+    font-size: $font-size-16;
+    line-height: 160%;
+    text-decoration-line: underline;
+    color: $color-black;
+  }
+}
