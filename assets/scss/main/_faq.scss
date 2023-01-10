@@ -36,13 +36,11 @@
 
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
   // background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 
 .panel {
   padding: 0 18px;
@@ -143,7 +141,6 @@
 
     }
 
-    @include xl {}
   }
 
   &__ask-title {
@@ -178,15 +175,12 @@
     }
   }
 
-  &__question-box {}
 }
 
 .question {
 
   @include ul-min {
     max-width: 630px;
-
-
   }
 
   @include ul {
@@ -204,10 +198,6 @@
   @media (max-width:851px) {
     max-width: 100%;
   }
-
-
-
-  &__title {}
 
   &__desc {
     font-weight: $font-weight-400;
@@ -227,5 +217,4 @@
     }
   }
 
-  &__panel {}
 }
