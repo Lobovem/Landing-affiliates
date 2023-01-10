@@ -6,12 +6,27 @@
   display: flex;
   gap: 147px;
 
+  @include ul {
+    gap: 36px;
+  }
+
+  @media (max-width:900px) {
+    flex-wrap: wrap;
+    row-gap: 56px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    align-content: center;
+    row-gap: 28px;
+  }
+
   &__item {}
 
-  &__email {}
 
   &__img {
     max-width: 25px;
+    height: 25px;
   }
 
 
@@ -19,6 +34,19 @@
     display: flex;
     gap: 18px;
     margin-bottom: 14px;
+    align-items: center;
+
+    @media (max-width:900px) {
+      margin-bottom: 10px;
+    }
+
+    @include sm {
+      justify-content: center;
+      margin-bottom: 14px;
+
+    }
+
+
   }
 
   &__title {
@@ -29,6 +57,14 @@
     text-transform: uppercase;
 
     color: $color-white;
+
+    @media (max-width:900px) {
+      font-size: $font-size-14;
+    }
+
+    @include sm {
+      // text-align: center;
+    }
   }
 
   &__link {
@@ -41,10 +77,35 @@
     border: none;
 
     color: #E3C6AD;
-    margin-left: 44px;
+
+    @include sm-min {
+      margin-left: 44px;
+
+    }
+
+    @media (max-width:900px) {
+      font-size: $font-size-14;
+    }
+
+    @include sm {
+      text-align: center;
+    }
   }
 
-  &__skype {}
 
-  &__telegram {}
+  &__email {}
+
+  &__skype {
+    @media (max-width:900px) {
+
+      order: 1;
+    }
+  }
+
+  &__telegram {
+    @media (max-width:900px) {
+
+      order: 0;
+    }
+  }
 }
