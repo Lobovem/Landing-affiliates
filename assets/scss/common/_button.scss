@@ -128,4 +128,22 @@
       min-height: 45px;
     }
   }
+
+  &__third {
+    width: 155px;
+    min-height: 45px;
+    border: 1px solid $color-black;
+    font-weight: $font-weight-700;
+    font-size: $font-size-14;
+    line-height: 17px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $color-black;
+    cursor: pointer;
+    display: flex;
+  }
 }
