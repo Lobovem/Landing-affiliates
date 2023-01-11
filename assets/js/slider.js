@@ -134,11 +134,36 @@ const swiper3 = new Swiper('.swiper', {
   // Optional parameters
   // loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  breakpoints: {
+    310: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+
+    768: {},
+
+    1000: {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // slidesPerView: 5,
+    },
+
+    1300: {
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+    },
   },
+
+  // If we need pagination
+
   slidesPerView: 3,
 
   // Navigation arrows
