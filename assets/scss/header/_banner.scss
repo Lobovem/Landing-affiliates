@@ -106,6 +106,8 @@
     top: -380px;
     border-radius: 650px;
     border: none;
+    border-color: $color-white;
+    border-width: 1px;
     background: $color-main;
 
     @include ul {
