@@ -3,10 +3,38 @@
 
 .affiliates {
 
+  &__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 140px 40px;
+    // gap: 46px;
+
+    @include ul {
+      padding: 0 0 100px 0;
+
+    }
+
+    @include xl {
+      padding: 0 0 38px 0;
+
+    }
+  }
+
   &__title-box {
     display: flex;
     justify-content: space-between;
-    padding: 88px 40px 78px 40px;
+    padding: 88px 0 78px 0;
+    gap: $gap-xl;
+    align-items: center;
+
+    @include ul {
+      padding: 60px 0;
+
+    }
+
+    @include xl {
+      padding: 34px 0 28px 0;
+    }
   }
 
 
@@ -18,17 +46,39 @@
     text-transform: uppercase;
     color: $color-black;
 
+
+    @include xl {
+      font-size: $font-size-24;
+    }
+
   }
 
   &__arrow-box {
-    position: relative;
+    // position: relative;
     display: flex;
-    width: 220px;
+    gap: 88px;
+    // width: 220px;
+
+    @include ul {
+      gap: 44px;
+      // width: 180px;
+    }
+
+    @include xl {
+      gap: 24px;
+      // width: 162px;
+      // position: relative;
+      // top: -10px;
+    }
 
   }
 
   &__arrow-right {
     width: 58px;
+
+    @include md {
+      // width: 30px;
+    }
   }
 
   &__arrow-left {
@@ -36,17 +86,15 @@
     width: 58px;
     // opacity: 0.4;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-right: 88px;
 
+    // margin-right: 88px;
+    @include md {
+      // width: 30px;
+    }
   }
 
-  &__item-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px 140px 40px;
-    gap: 46px;
 
-  }
+
 
   &__item-title {
     font-weight: $font-weight-400;
@@ -54,6 +102,10 @@
     line-height: 160%;
     color: $color-black;
     margin-bottom: 20px;
+
+    @include xl {
+      font-size: $font-size-14;
+    }
 
   }
 
@@ -63,12 +115,16 @@
     line-height: 160%;
     text-decoration-line: underline;
     color: $color-black;
+
+    @include xl {
+      font-size: $font-size-14;
+    }
   }
 }
 
 .swiper {
   // width: 600px;
-  height: 450px;
+  // height: 450px;
 }
 
 .swiper3 {

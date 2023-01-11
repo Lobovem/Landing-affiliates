@@ -133,6 +133,7 @@ const swiper2 = new Swiper('.swiper2', {
 const swiper3 = new Swiper('.swiper', {
   // Optional parameters
   // loop: true,
+  spaceBetween: 44,
 
   pagination: {
     el: '.swiper-pagination',
