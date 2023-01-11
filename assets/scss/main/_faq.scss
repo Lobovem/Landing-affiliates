@@ -52,36 +52,40 @@
   transition: max-height 0.2s ease-out;
 }
 
-.accordion:after {
-  position: absolute;
-  content: '';
-  left: 15px;
-  right: 0;
-  bottom: 0;
-  top: 18px;
-  transition: 0.4s;
-  background-image: url(../img/faq-icon+.svg);
-  background-repeat: no-repeat;
+.accordion {
 
-  @include ul {
-    top: 13px;
+  &:after {
+    position: absolute;
+    content: '';
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    top: 18px;
+    // transition: 0.4s;
+    background-image: url(../img/faq-icon+.svg);
+    background-repeat: no-repeat;
+
+    @include ul {
+      top: 13px;
+    }
+  }
+
+  &.active:after {
+    position: absolute;
+    content: '';
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    top: 24px;
+    background-image: url(../img/faq-icon-.svg);
+    background-repeat: no-repeat;
+
+    @include ul {
+      top: 19px;
+    }
   }
 }
 
-.active:after {
-  position: absolute;
-  content: '';
-  left: 15px;
-  right: 0;
-  bottom: 0;
-  top: 24px;
-  background-image: url(../img/faq-icon-.svg);
-  background-repeat: no-repeat;
-
-  @include ul {
-    top: 19px;
-  }
-}
 
 
 .faq {

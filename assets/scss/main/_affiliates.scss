@@ -72,21 +72,15 @@
   }
 
   &__arrow-box {
-    // position: relative;
     display: flex;
     gap: 88px;
-    // width: 220px;
 
     @include ul {
       gap: 44px;
-      // width: 180px;
     }
 
     @include xl {
       gap: 24px;
-      // width: 162px;
-      // position: relative;
-      // top: -10px;
     }
 
     @include md {
@@ -95,21 +89,9 @@
 
   }
 
-
-
-  &__arrow-right {
-
-    @include md {}
-  }
-
   &__arrow-left {
     transform: matrix(-1, 0, 0, 1, 0, 0);
-
-    @include md {}
   }
-
-
-
 
   &__item-title {
     font-weight: $font-weight-400;
@@ -137,20 +119,7 @@
   }
 }
 
-.swiper {
-  // width: 600px;
-  // height: 450px;
-}
 
-.swiper3 {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-}
 
 .arrow {
   width: 58px;
@@ -172,10 +141,3 @@
   }
 
 }
-
-// .swiper-button-prev::after {
-//   background-image: url(../img/arrow.svg);
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   color: red;
-// }
