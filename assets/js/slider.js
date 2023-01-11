@@ -134,43 +134,33 @@ const swiper3 = new Swiper('.swiper', {
   // Optional parameters
   // loop: true,
 
-  breakpoints: {
-    310: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    400: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-
-    768: {},
-
-    1000: {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      // slidesPerView: 5,
-    },
-
-    1300: {
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   clickable: true,
-      // },
-    },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    enabled: true,
+    slidesPerView: 1,
   },
 
-  // If we need pagination
-
-  slidesPerView: 3,
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    enabled: false,
   },
 
-  // And if we need scrollbar
+  breakpoints: {
+    480: {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: false,
+      },
+      slidesPerView: 3,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        enabled: true,
+      },
+    },
+  },
 });
