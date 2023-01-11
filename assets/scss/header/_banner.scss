@@ -104,10 +104,9 @@
     height: 1060px;
     right: -200px;
     top: -380px;
-    border-radius: 650px;
-    border: none;
-    border-color: $color-white;
-    border-width: 1px;
+    border-radius: 630px;
+    border-color: $color-main;
+    border-width: 3px;
     background: $color-main;
 
     @include ul {
