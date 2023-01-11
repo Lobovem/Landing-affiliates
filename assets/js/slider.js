@@ -136,9 +136,10 @@ const swiper3 = new Swiper('.swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination3',
+    el: '.swiper-pagination',
     clickable: true,
   },
+  slidesPerView: 3,
 
   // Navigation arrows
   navigation: {
