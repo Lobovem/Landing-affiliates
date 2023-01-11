@@ -8,7 +8,6 @@ const swiper = new Swiper('.swiper3', {
       speed: 800,
     },
   },
-
   // Optional parameters
   // direction: 'vertical',
   loop: true,
@@ -131,10 +130,6 @@ const swiper2 = new Swiper('.swiper2', {
 });
 
 const swiper3 = new Swiper('.swiper', {
-  // Optional parameters
-  // loop: true,
-  spaceBetween: 44,
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -149,7 +144,39 @@ const swiper3 = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    480: {
+    200: {
+      autoplay: {
+        delay: 3000,
+        enabled: true,
+      },
+      spaceBetween: 20,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: true,
+      },
+      slidesPerView: 1,
+    },
+
+    576: {
+      spaceBetween: 20,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: false,
+      },
+      slidesPerView: 3,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        enabled: true,
+      },
+    },
+    800: {
+      spaceBetween: 44,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
