@@ -61,3 +61,18 @@
     color: $color-black;
   }
 }
+
+.swiper {
+  // width: 600px;
+  // height: 300px;
+}
+
+.swiper3 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}

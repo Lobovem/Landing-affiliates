@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper3', {
   spaceBetween: 20,
   enabled: true,
   breakpoints: {
@@ -128,4 +128,23 @@ const swiper2 = new Swiper('.swiper2', {
   // scrollbar: {
   //   el: '.swiper-scrollbar',
   // },
+});
+
+const swiper3 = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination3',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
 });
