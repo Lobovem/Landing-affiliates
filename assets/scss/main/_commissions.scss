@@ -74,7 +74,7 @@
   }
 
   &__item {
-    padding: 40px;
+    padding: 40px 20px 40px 40px;
     border: 1px solid #BCBCBC;
     border-radius: 45px;
     min-height: 278px;
@@ -99,7 +99,7 @@
 
     @include md {
       min-height: 169px;
-      padding: 20px 28px 28px 28px;
+      padding: 20px 20px 28px 28px;
       gap: 26px;
 
     }
