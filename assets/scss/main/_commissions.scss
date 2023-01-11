@@ -62,7 +62,7 @@
   }
 
   &__slider {
-    overflow: hidden;
+    overflow-x: hidden;
 
     @include sm-min {
       display: none;

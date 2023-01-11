@@ -3,7 +3,7 @@
 
 .footer {
   background: #000917; //TODO проверить по сайту цвет черный
-  overflow: hidden;
+  overflow-x: hidden;
 
   @include ul-min {
     padding: 0 40px;
