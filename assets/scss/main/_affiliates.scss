@@ -35,6 +35,11 @@
     @include xl {
       padding: 34px 0 28px 0;
     }
+
+    @include md {
+      padding: 42px 0 30px 0;
+
+    }
   }
 
 
@@ -71,26 +76,23 @@
       // top: -10px;
     }
 
+    @include md {
+      gap: 30px;
+    }
+
   }
 
-  &__arrow-right {
-    width: 58px;
 
-    @include md {
-      // width: 30px;
-    }
+
+  &__arrow-right {
+
+    @include md {}
   }
 
   &__arrow-left {
-    // position: absolute;
-    width: 58px;
-    // opacity: 0.4;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 
-    // margin-right: 88px;
-    @include md {
-      // width: 30px;
-    }
+    @include md {}
   }
 
 
@@ -137,6 +139,26 @@
   z-index: 1;
 }
 
+.arrow {
+  width: 58px;
+
+  @include md {
+    display: none;
+  }
+
+  &--sm {
+    width: 30px;
+
+    @include md-min {
+      display: none;
+    }
+
+    @include md {
+      display: block;
+    }
+  }
+
+}
 
 // .swiper-button-prev::after {
 //   background-image: url(../img/arrow.svg);
