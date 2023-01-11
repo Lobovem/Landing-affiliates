@@ -132,7 +132,7 @@ const swiper2 = new Swiper('.swiper2', {
 
 const swiper3 = new Swiper('.swiper', {
   // Optional parameters
-  loop: true,
+  // loop: true,
 
   // If we need pagination
   pagination: {
