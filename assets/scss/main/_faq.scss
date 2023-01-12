@@ -53,29 +53,6 @@
     }
   }
 
-}
-
-.active,
-.accordion:hover {
-  // background-color: #ccc;
-}
-
-
-.panel {
-
-  padding-left: 14px;
-  background-color: #F6F1F7;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.6s ease 0s;
-
-  &--alt {
-    background: #EAE3EB;
-  }
-}
-
-.accordion {
-
   &:after {
     position: absolute;
     content: '';
@@ -105,9 +82,27 @@
       top: 19px;
     }
   }
+
+}
+
+.active,
+.accordion:hover {
+  // background-color: #ccc;
 }
 
 
+.panel {
+
+  padding-left: 14px;
+  background-color: #F6F1F7;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.6s ease 0s;
+
+  &--alt {
+    background: #EAE3EB;
+  }
+}
 
 .faq {
   background: #F6F1F7;
