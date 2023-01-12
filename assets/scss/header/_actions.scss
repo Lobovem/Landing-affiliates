@@ -43,6 +43,12 @@
     align-items: center;
     justify-content: center;
 
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      color: #e79703;
+    }
+
     @include xl {
       font-size: $font-size-12;
       line-height: 15px;

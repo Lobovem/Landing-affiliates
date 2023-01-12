@@ -5,6 +5,8 @@
 
   display: flex;
   gap: 147px;
+  position: relative;
+  z-index: 1;
 
   @include ul {
     gap: 36px;
@@ -69,6 +71,12 @@
     border: none;
 
     color: #E3C6AD;
+
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      color: #e79703;
+    }
 
     @include sm-min {
       margin-left: 44px;

@@ -55,7 +55,11 @@
     font-size: $font-size-14;
     line-height: 17px;
 
-    text-transform: capitalize;
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      color: #e79703;
+    }
 
 
     @include xl-min {

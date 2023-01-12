@@ -2,8 +2,6 @@
 @use "../mixins" as *;
 
 .button {
-  font-family: 'Inter';
-  font-style: normal;
 
   &__main {
     display: flex;
@@ -22,6 +20,11 @@
     text-transform: uppercase;
     color: $color-white;
     background: #A89C86;
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      background: #5C5547;
+    }
 
     @include xl {
       width: 105px;
@@ -62,6 +65,12 @@
 
     color: $color-black;
     background: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
+    transition: all 0.6s ease 0s; //TODO hover gradient
+
+    &:hover {
+      background: linear-gradient(270deg, #FFF2D8 0%, #FFD584 100%);
+
+    }
 
     @include ul {
       width: 268px;
@@ -95,6 +104,11 @@
     text-transform: uppercase;
     background: $color-black;
     color: $color-white;
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      background: #28253A;
+    }
 
     &--mobile {
 
@@ -107,7 +121,11 @@
         min-height: 45px;
         font-size: $font-size-14;
         line-height: 17px;
+        transition: all 0.6s ease 0s;
 
+        &:hover {
+          background: #28253A;
+        }
       }
     }
 
@@ -147,5 +165,12 @@
     color: $color-black;
     cursor: pointer;
     display: flex;
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      background: #000917;
+      color: $color-white;
+
+    }
   }
 }

@@ -113,6 +113,12 @@
     text-decoration-line: underline;
     color: $color-black;
 
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      color: #b97a03;
+    }
+
     @include xl {
       font-size: $font-size-14;
     }
