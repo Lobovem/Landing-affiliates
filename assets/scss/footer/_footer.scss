@@ -2,7 +2,7 @@
 @use "../mixins" as *;
 
 .footer {
-  background: #000917; //TODO проверить по сайту цвет черный
+  background: $color-black;
   overflow-x: hidden;
 
   @include ul-min {
@@ -77,10 +77,7 @@
       @media (max-width:900px) {
         display: none;
       }
-
-
     }
-
   }
 
 

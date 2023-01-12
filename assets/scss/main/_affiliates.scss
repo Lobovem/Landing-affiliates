@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 40px 140px 40px;
-    // gap: 46px;
 
     @include ul {
       padding: 0 0 100px 0;
@@ -124,8 +123,6 @@
     }
   }
 }
-
-
 
 .arrow {
   width: 58px;

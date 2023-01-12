@@ -3,7 +3,6 @@
 
 .experience-boho {
   background: #E3C6AD;
-  // overflow-x: hidden;
 
   &__wrap {
     display: flex;
@@ -27,7 +26,6 @@
 
     }
 
-    @include md {}
 
     @include sm {
       padding: 14px 0 16px 0;
@@ -56,7 +54,6 @@
 
   }
 
-  @include md {}
 
   &__title {
     font-weight: $font-weight-700;
@@ -86,7 +83,6 @@
 
     }
 
-    @include md {}
   }
 
   &__desc {
@@ -115,14 +111,11 @@
       margin-bottom: 40px;
     }
 
-    @include md {}
 
     @include sm {
       margin-bottom: 24px;
     }
   }
-
-  &__box {}
 
   &__img-box {
     position: relative;

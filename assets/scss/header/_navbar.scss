@@ -12,7 +12,7 @@
     height: 100vh;
     background-color: $color-main;
     // background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 60%, rgb(163, 163, 163, 0.95) 40%);
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     transform: translate(100%, 0);
 
     &.active {
@@ -68,7 +68,7 @@
     }
 
     @include xl {
-      font-size: 30px;
+      font-size: $font-size-30;
     }
   }
 }

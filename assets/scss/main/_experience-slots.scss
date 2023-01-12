@@ -3,7 +3,6 @@
 
 .experience-slots {
   background: #000917;
-  // overflow: hidden;
 
   &__wrap {
     display: flex;
@@ -33,8 +32,6 @@
       gap: 32px;
     }
   }
-
-  &__info {}
 
   &__title {
     font-weight: $font-weight-700;
@@ -97,8 +94,6 @@
       padding: 0;
     }
   }
-
-  &__box {}
 
   &__img-box {
     position: relative;
@@ -231,8 +226,5 @@
     @media (max-width: 920px) {
       width: 100%;
     }
-
-
-
   }
 }

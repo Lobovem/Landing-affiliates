@@ -9,8 +9,6 @@
 
   }
 
-  @include md {}
-
   @include sm {
     flex-direction: column;
     display: block;
@@ -44,14 +42,8 @@
 
     }
 
-    @include md {}
-
   }
 
-  &__item {}
-
-
-  &__country {}
 
   &__country-box {
     max-width: 310px;
@@ -170,9 +162,6 @@
         display: none;
       }
 
-
-      @include md {}
-
       @include sm {
         display: inline;
       }
@@ -183,8 +172,6 @@
         display: none;
 
       }
-
-      @include md-min {}
 
       @include sm {
         display: none;
