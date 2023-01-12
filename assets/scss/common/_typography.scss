@@ -17,6 +17,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  &.active {
+    overflow: hidden;
+  }
+}
+
 a {
   text-decoration: none;
 

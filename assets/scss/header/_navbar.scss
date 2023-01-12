@@ -25,12 +25,15 @@
     display: flex;
 
     @include unlist;
+
     @include ul {
       gap: 15px;
     }
+
     @include xl-min {
       gap: $gap;
     }
+
     @include xl {
       flex-direction: column;
 
@@ -59,6 +62,7 @@
     @include xl-min {
       text-align: center;
     }
+
     @include xl {
       font-size: $font-size-30;
     }
