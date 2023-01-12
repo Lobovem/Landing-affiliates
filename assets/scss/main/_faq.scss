@@ -4,31 +4,32 @@
 
 .accordion {
   position: relative;
-  background-color: #F6F1F7;
-  cursor: pointer;
-  padding-top: 14px;
-  padding-bottom: 34px;
-  padding-right: 10px;
-  padding-left: 50px;
+
   width: 100%;
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-bottom: 34px;
+  padding-left: 50px;
+
+  cursor: pointer;
   text-align: left;
+
+  color: $color-black;
   border: none;
   border-top: 1px solid $color-black;
   outline: none;
-  font-weight: $font-weight-400;
+  background-color: #f6f1f7;
+
   font-size: $font-size-18;
+  font-weight: $font-weight-400;
   line-height: 22px;
-  color: $color-black;
-
-
 
   @include ul {
-    font-size: $font-size-14;
-    line-height: 17px;
     padding-top: 10px;
-
     padding-bottom: 30px;
 
+    font-size: $font-size-14;
+    line-height: 17px;
   }
 
   @media (max-width:851px) {
@@ -36,19 +37,16 @@
   }
 
   &--alt {
-    background: #EAE3EB;
+    background: #eae3eb;
 
     @include ul {
       font-size: $font-size-18;
       line-height: 22px;
-
     }
-
     @include xl {
       font-size: $font-size-16;
       line-height: 19px;
     }
-
     @include xs {
       font-size: $font-size-12;
       line-height: 15px;
@@ -57,11 +55,13 @@
 
   &:after {
     position: absolute;
-    content: '';
-    left: 15px;
+    top: 18px;
     right: 0;
     bottom: 0;
-    top: 18px;
+    left: 15px;
+
+    content: "";
+
     background-image: url(../img/faq-icon+.svg);
     background-repeat: no-repeat;
 
@@ -72,11 +72,13 @@
 
   &.active:after {
     position: absolute;
-    content: '';
-    left: 15px;
+    top: 24px;
     right: 0;
     bottom: 0;
-    top: 24px;
+    left: 15px;
+
+    content: "";
+
     background-image: url(../img/faq-icon-.svg);
     background-repeat: no-repeat;
 
@@ -84,7 +86,6 @@
       top: 19px;
     }
   }
-
 }
 
 .active,
@@ -94,37 +95,34 @@
 
 
 .panel {
-
-  padding-left: 14px;
-  background-color: #F6F1F7;
-  max-height: 0;
   overflow: hidden;
+
+  max-height: 0;
+  padding-left: 14px;
+
   transition: all 0.6s ease 0s;
 
+  background-color: #f6f1f7;
+
   &--alt {
-    background: #EAE3EB;
+    background: #eae3eb;
   }
 }
 
 .faq {
-  background: #F6F1F7;
+  background: #f6f1f7;
 
   &--alt {
     margin-top: 20px;
     padding-bottom: 60px;
 
-
-
     @include xl {
       margin-top: 10px;
       padding-bottom: 40px;
-
     }
-
     @include md {
       padding-bottom: 20px;
     }
-
     @include xs {
       margin-top: 6px;
     }
@@ -132,63 +130,64 @@
 
   &__wrap {
     display: flex;
-    gap: 236px;
+
     padding-top: 36px;
     padding-bottom: 10px;
 
+    gap: 236px;
     @include ul {
       padding-top: 52px;
       padding-bottom: 14px;
+
       gap: 114px;
-    }
-
-    @media (max-width:1380px) {
-      gap: 50px;
-      justify-content: space-between;
-    }
-
+    }
     @include xl {
-      gap: 40px;
       padding-top: 38px;
       padding-bottom: 18px;
 
+      gap: 40px;
+    }
+    @include xs {
+      padding-bottom: 0;
+
+      gap: 22px;
+    }
+
+    @media (max-width:1380px) {
+      justify-content: space-between;
+
+      gap: 50px;
     }
 
     @media (max-width:850px) {
       flex-direction: column;
+
+      padding-bottom: 0;
+
       gap: 32px;
-      padding-bottom: 0;
-
-    }
-
-    @include xs {
-      gap: 22px;
-      padding-bottom: 0;
     }
 
     &--alt {
-      background: #EAE3EB;
-      border-radius: 45px;
       flex-direction: column;
+
+      border-radius: 45px;
+      background: #eae3eb;
+
       gap: 0;
-
       @include ul {
-
         padding-top: 40px;
         padding-bottom: 0;
-
       }
-
       @include xl {
+        padding-bottom: 0;
+
         border-radius: 34px;
-        padding-bottom: 0px;
       }
-
       @include md {
-        border-radius: 18px;
         padding-top: 20px;
-      }
 
+        border-radius: 18px;
+      }
       @include xs {
         border-radius: 14px;
       }
@@ -196,24 +195,26 @@
   }
 
   &__title-alt {
-    font-weight: $font-weight-400;
-    font-size: $font-size-40;
-    line-height: 120%;
+    padding: 50px 0 40px 0;
+
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 50px 0 40px 0;
+
+    font-size: $font-size-40;
+    font-weight: $font-weight-400;
+    line-height: 120%;
 
     @include xl {
-      font-size: $font-size-24;
       padding: 40px 0 20px 0;
-    }
 
+      font-size: $font-size-24;
+    }
     @include md {
-      font-size: $font-size-20;
       padding: 20px 0;
-    }
 
+      font-size: $font-size-20;
+    }
     @include xs {
       font-size: $font-size-16;
     }
@@ -224,16 +225,13 @@
 
     @include ul-min {
       margin-left: 40px;
-
     }
-
     @include ul {
       max-width: 410px;
     }
 
     @media (max-width:1320px) and (min-width: 851px) {
       width: 200px;
-
     }
 
     &--alt {
@@ -241,76 +239,63 @@
       padding: 10px 50px 20px 50px;
 
       @include ul-min {
-        margin-left: 0px;
-
+        margin-left: 0;
       }
-
       @include ul {
         max-width: 100%;
         padding: 10px 50px 6px 50px;
+      }
+      @include md {
+        padding: 0 20px 0 20px;
+      }
+      @include xs {
+        padding: 0 10px;
       }
 
       @media (max-width:1320px) and (min-width: 851px) {
         width: 100%;
-
-      }
-
-      @include md {
-        padding: 0 20px 0px 20px;
-      }
-
-      @include xs {
-        padding: 0 10px;
       }
     }
-
   }
 
   &__ask-title {
-    font-weight: $font-weight-400;
-    font-size: $font-size-54;
-    line-height: 120%;
+    margin-bottom: 20px;
+    padding-top: 240px;
+
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
-    padding-top: 240px;
-    margin-bottom: 20px;
+    font-size: $font-size-54;
+    font-weight: $font-weight-400;
+    line-height: 120%;
 
     @include ul {
       padding-top: 154px;
+    }
+    @include xl {
+      padding-top: 42px;
+    }
+    @include xs {
+      font-size: $font-size-20;
     }
 
     @media (max-width:1320px) {
       font-size: $font-size-24;
-
-    }
-
-    @include xl {
-      padding-top: 42px;
     }
 
     @media (max-width:851px) {
       padding-top: 0;
     }
-
-    @include xs {
-      font-size: $font-size-20;
-    }
   }
-
 }
 
 .question {
-
-
   @include ul-min {
     max-width: 630px;
   }
-
   @include ul {
     max-width: 672px;
   }
-
   @include xl {
     max-width: 650px;
   }
@@ -327,11 +312,9 @@
     @include ul-min {
       max-width: 100%;
     }
-
     @include ul {
       max-width: 100%;
     }
-
     @include xl {
       max-width: 100%;
     }
@@ -339,22 +322,23 @@
     @media (max-width:945px) {
       max-width: 100%;
     }
-
-
   }
 
 
   &__desc {
-    font-weight: $font-weight-400;
-    font-size: $font-size-18;
-    line-height: 150%;
-    color: $color-black;
     padding-bottom: 40px;
 
+    color: $color-black;
+
+    font-size: $font-size-18;
+    font-weight: $font-weight-400;
+    line-height: 150%;
+
     @include ul {
+      padding-bottom: 32px;
+
       font-size: $font-size-14;
       line-height: 150%;
-      padding-bottom: 32px;
     }
 
     @media (max-width:851px) {
@@ -365,19 +349,16 @@
       @include ul {
         font-size: $font-size-18;
         line-height: 22px;
-
       }
-
       @include xl {
         font-size: $font-size-16;
       }
-
       @include xs {
+        padding-bottom: 20px;
+
         font-size: $font-size-12;
         line-height: 15px;
-        padding-bottom: 20px;
       }
     }
   }
-
 }

@@ -2,64 +2,57 @@
 @use "../mixins" as *;
 
 .actions {
-
   display: flex;
 
   &__access {
     display: flex;
     align-items: center;
-    gap: 45px;
 
+    gap: 45px;
     @include ul {
       gap: 40px;
-
     }
-
     @include xl {
       gap: $gap-lg;
-
     }
-
     @include md {
       gap: 25px;
     }
-
     @include xx {
       gap: 15px;
     }
   }
 
   &__access-link {
-    font-weight: $font-weight-700;
-    font-size: $font-size-14;
-    line-height: 17px;
-    padding: 10px 0;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    transition: all 0.6s ease 0s;
+    padding: 10px 0;
 
-    &:hover {
-      color: #e79703;
-    }
+    transition: all 0.6s ease 0s;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    font-size: $font-size-14;
+    font-weight: $font-weight-700;
+    line-height: 17px;
 
     @include xl {
       font-size: $font-size-12;
       line-height: 15px;
     }
-
     @include md {
       font-size: $font-size-10;
       line-height: 12px;
     }
-
     @include xx {
       font-size: $font-size-9;
       line-height: 11px;
+    }
+
+    &:hover {
+      color: #e79703;
     }
   }
 }

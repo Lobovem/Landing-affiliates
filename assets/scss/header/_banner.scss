@@ -2,23 +2,18 @@
 @use "../mixins" as *;
 
 .banner {
-
   &__text-box {
     padding-top: 206px;
 
     @include ul {
       padding-top: 184px;
     }
-
     @include xl {
       padding-top: 94px;
     }
-
     @include md {
       padding-top: 70px;
-
     }
-
     @include sm {
       padding-top: 46px;
     }
@@ -26,40 +21,42 @@
 
 
   &__title {
-    font-weight: $font-weight-400;
-    font-size: $font-size-74;
-    line-height: 120%;
-    letter-spacing: 0.05em;
     margin-bottom: 24px;
 
+    letter-spacing: 0.05em;
+
+    font-size: $font-size-74;
+    font-weight: $font-weight-400;
+    line-height: 120%;
+
     @include ul {
+      max-width: 600px;
+
       font-size: $font-size-54;
       line-height: 120%;
-
-      max-width: 600px;
     }
-
     @include xl {
+      max-width: 402px;
+
       font-size: $font-size-40;
       line-height: 120%;
-      max-width: 402px;
     }
-
     @include md {
+      max-width: 360px;
+
       font-size: $font-size-32;
       line-height: 120%;
-      max-width: 360px;
     }
-
     @include sm {
-      font-size: $font-size-24;
-      line-height: 120%;
-      text-align: center;
+      max-width: 270px;
       margin-right: auto;
       margin-left: auto;
-      max-width: 270px;
-    }
 
+      text-align: center;
+
+      font-size: $font-size-24;
+      line-height: 120%;
+    }
     @include xx {
       margin-bottom: 14px;
     }
@@ -76,18 +73,15 @@
     position: relative;
 
     padding-top: 40px;
-
     padding-right: 50px;
 
     @include ul {
-      padding-right: 10px;
       padding-top: 128px;
+      padding-right: 10px;
     }
-
     @include xl {
       padding-top: 50px;
     }
-
     @include md {
       margin-right: -84px;
       padding-right: 0;
@@ -97,56 +91,51 @@
   &__decor-header {
     position: absolute;
     z-index: -1;
+    top: -380px;
+    right: -200px;
+
     width: 1060px;
     height: 1060px;
-    right: -200px;
-    top: -380px;
-    border-radius: 50%;
-    border-color: $color-main;
+
     border-width: 3px;
+    border-color: $color-main;
+    border-radius: 50%;
     background: $color-main;
 
     @include ul {
+      top: -242px;
+      right: -160px;
+
       width: 745px;
       height: 745px;
-      right: -160px;
-      top: -242px;
-
     }
-
     @include xl {
-      right: -330px;
       top: -360px;
-
+      right: -330px;
     }
-
     @include md {
+      top: -108px;
+      right: 0;
+
       width: 352px;
       height: 352px;
-      right: 0;
-      top: -108px;
     }
-
     @include sm {
-      right: -320px;
       top: -270px;
+      right: -320px;
     }
-
   }
 
   &__foto {
     @include ul {
       max-width: 616px;
     }
-
     @include xl {
       max-width: 426px;
     }
-
     @include md {
       max-width: 300px;
     }
-
     @include sm {
       display: none;
     }

@@ -3,39 +3,37 @@
 
 .header {
   position: relative;
+
   overflow-x: hidden;
 
   &__wrap {
     position: relative;
     z-index: 1;
+
     display: flex;
-    gap: $gap-lg;
-    padding-top: 20px;
     align-items: center;
     justify-content: space-between;
 
+    padding-top: 20px;
+
+    gap: $gap-lg;
     @include ul {
       padding-top: 15px;
-
     }
-
     @include xl {
       padding-top: 10px;
     }
-
     @include xx {
       gap: 0;
     }
-
   }
 
   &__navbar-box {
     display: flex;
-    gap: 58px;
 
+    gap: 58px;
     @include ul {
       gap: 38px;
-
     }
   }
 
@@ -45,33 +43,30 @@
     @include md {
       max-height: 33px;
     }
-
     @include xx {
       max-height: 25px;
-
     }
   }
 
   &__banner {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 212px;
 
     @include ul {
       margin-bottom: 74px;
     }
-
     @include xl {
       margin-bottom: 140px;
     }
-
     @include md {
       margin-bottom: 68px;
     }
-
     @include sm {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
+
       margin-bottom: 4px;
     }
   }
@@ -82,11 +77,9 @@
     @include ul {
       margin-bottom: 40px;
     }
-
     @include xl {
       margin-bottom: 60px;
     }
-
     @include md {
       margin-bottom: 40px;
     }

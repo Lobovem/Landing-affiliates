@@ -2,75 +2,76 @@
 @use "../mixins" as *;
 
 .button {
-
   &__main {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+
     width: 131px;
     height: 41px;
-    font-weight: $font-weight-700;
-    font-size: $font-size-14;
-    line-height: 17px;
     padding: 10px;
 
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: $color-white;
-    background: #A89C86;
-    transition: all 0.6s ease 0s;
 
-    &:hover {
-      background: #5C5547;
-    }
+    color: $color-white;
+    background: #a89c86;
+
+    font-size: $font-size-14;
+    font-weight: $font-weight-700;
+    line-height: 17px;
 
     @include xl {
       width: 105px;
       height: 33px;
+
       font-size: $font-size-12;
       line-height: 15px;
     }
-
     @include md {
       width: 85px;
       height: 27px;
+      margin-right: 5px;
+
       font-size: $font-size-10;
       line-height: 12px;
-      margin-right: 5px;
     }
-
     @include xx {
       width: 71px;
       height: 23px;
+
       font-size: $font-size-9;
       line-height: 11px;
+    }
+
+    &:hover {
+      background: #5c5547;
     }
   }
 
   &__first {
     display: flex;
-    justify-content: center;
     align-items: center;
-    cursor: pointer;
+    justify-content: center;
+
     width: 300px;
     min-height: 72px;
-    font-weight: 700;
-    font-size: $font-size-18;
-    line-height: 22px;
     padding: 10px;
+
+    cursor: pointer;
+    transition: all 0.6s ease 0s; //TODO hover gradient
     letter-spacing: 0.05em;
     text-transform: uppercase; //TODO пересмотреть повторяющиеся свойства. You need will see reapet styles
 
     color: $color-black;
-    background: linear-gradient(90deg, #FECE71 0%, #FFAF14 100%);
-    transition: all 0.6s ease 0s; //TODO hover gradient
+    background: linear-gradient(90deg, #fece71 0%, #ffaf14 100%);
 
-    &:hover {
-      background: linear-gradient(270deg, #FFF2D8 0%, #FFD584 100%);
-
-    }
+    font-size: $font-size-18;
+    font-weight: 700;
+    line-height: 22px;
 
     @include ul {
       width: 268px;
@@ -79,52 +80,70 @@
       font-size: $font-size-16;
       line-height: 19px;
     }
-
     @include md {
       width: 222px;
       min-height: 45px;
     }
 
+    &:hover {
+      background: linear-gradient(270deg, #fff2d8 0%, #ffd584 100%);
+    }
   }
 
   &__second {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+
     width: 199px;
     min-height: 62px;
-    line-height: 17px;
     padding: 10px;
-    font-weight: $font-weight-700;
-    font-size: 16px;
-    line-height: 19px;
+
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    background: $color-black;
+
     color: $color-white;
-    transition: all 0.6s ease 0s;
+    background: $color-black;
+
+    font-size: 16px;
+    font-weight: $font-weight-700;
+    line-height: 17px;
+    line-height: 19px;
+
+    @include ul {
+      width: 155px;
+      min-height: 45px;
+
+      font-size: $font-size-14;
+      line-height: 17px;
+    }
+    @include md {
+      width: 265px;
+      min-height: 45px;
+    }
 
     &:hover {
-      background: #28253A;
+      background: #28253a;
     }
 
     &--mobile {
-
       @include sm-min {
         display: none;
       }
-
       @include sm {
         width: 142px;
         min-height: 45px;
-        font-size: $font-size-14;
-        line-height: 17px;
+
         transition: all 0.6s ease 0s;
 
+        font-size: $font-size-14;
+        line-height: 17px;
+
         &:hover {
-          background: #28253A;
+          background: #28253a;
         }
       }
     }
@@ -134,43 +153,33 @@
         display: none;
       }
     }
-
-    @include ul {
-      width: 155px;
-      min-height: 45px;
-      font-size: $font-size-14;
-      line-height: 17px;
-
-    }
-
-    @include md {
-      width: 265px;
-      min-height: 45px;
-    }
   }
 
   &__third {
-    width: 155px;
-    min-height: 45px;
-    border: 1px solid $color-black;
-    font-weight: $font-weight-700;
-    font-size: $font-size-14;
-    line-height: 17px;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 155px;
+    min-height: 45px;
+    padding: 10px;
+
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
+    text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 10px;
+
     color: $color-black;
-    cursor: pointer;
-    display: flex;
-    transition: all 0.6s ease 0s;
+    border: 1px solid $color-black;
+
+    font-size: $font-size-14;
+    font-weight: $font-weight-700;
+    line-height: 17px;
 
     &:hover {
-      background: #000917;
       color: $color-white;
-
+      background: #000917;
     }
   }
 }

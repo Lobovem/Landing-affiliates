@@ -3,73 +3,75 @@
 
 .copyright {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  @include sm {
+    align-items: center;
+    flex-direction: column;
+  }
 
   @media (max-width:900px) {
     align-items: start;
   }
 
-  @include sm {
-    flex-direction: column;
-    align-items: center;
-  }
-
   &__desc {
-    font-weight: $font-weight-400;
-    font-size: $font-size-14;
-    line-height: 17px;
     color: $color-white;
+
+    font-size: $font-size-14;
+    font-weight: $font-weight-400;
+    line-height: 17px;
 
     @include xl {
       opacity: 0.3;
+    }
+    @include sm {
+      font-size: $font-size-10;
+      line-height: 12px;
     }
 
     @media (max-width:900px) {
       order: 2;
-
-    }
-
-    @include sm {
-      font-size: $font-size-10;
-      line-height: 12px;
     }
   }
 
   &__link-box {
     display: flex;
-    gap: 26px;
+
+    gap: 26px;
+    @include sm {
+      align-items: center;
+
+      margin-bottom: 36px;
+
+      gap: 6px;
+    }
 
     @media (max-width:900px) {
       flex-direction: column;
       order: 1;
-      gap: 4px;
-    }
 
-    @include sm {
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 36px;
+      gap: 4px;
     }
   }
 
   &__link {
-    font-weight: $font-weight-400;
-    font-size: $font-size-14;
-    line-height: 17px;
-    color: $color-white;
     padding: 10px 0;
 
     transition: all 0.6s ease 0s;
 
-    &:hover {
-      color: #e79703;
-    }
+    color: $color-white;
+
+    font-size: $font-size-14;
+    font-weight: $font-weight-400;
+    line-height: 17px;
 
     @include sm {
       padding: 3px 0;
+    }
 
+    &:hover {
+      color: #e79703;
     }
   }
-
 }
