@@ -5,11 +5,6 @@
   position: relative;
   overflow-x: hidden;
 
-  @include md-min {
-    // min-height: 750px;
-
-  }
-
   &__wrap {
     position: relative;
     z-index: 1;
