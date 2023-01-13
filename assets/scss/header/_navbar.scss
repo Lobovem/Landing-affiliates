@@ -15,10 +15,10 @@
     transform: translate(100%, 0);
 
     background-color: $color-main;
+    overflow: auto;
 
     &.active {
       transform: translate(0%, 0);
-      overflow: auto;
     }
   }
 
