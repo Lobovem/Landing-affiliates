@@ -9,7 +9,6 @@
 
     width: 100%;
     height: 100vh;
-    // background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 60%, rgb(163, 163, 163, 0.95) 40%);
 
     transition: all 0.5s ease 0s;
     transform: translate(100%, 0);
@@ -77,6 +76,7 @@
 .navbar__burger {
   position: relative;
   top: 8px;
+  z-index: 11;
 
   width: 20px;
   height: 29px;
