@@ -146,33 +146,17 @@
       min-height: 45px;
     }
 
-    &:hover {
-      background: #28253a;
-    }
+    @include sm {
+      width: 142px;
+      min-height: 45px;
 
-    &--mobile {
-      @include sm-min {
-        display: none;
-      }
+      transition: all 0.6s ease 0s;
 
-      @include sm {
-        width: 142px;
-        min-height: 45px;
+      font-size: $font-size-14;
+      line-height: 17px;
 
-        transition: all 0.6s ease 0s;
-
-        font-size: $font-size-14;
-        line-height: 17px;
-
-        &:hover {
-          background: #28253a;
-        }
-      }
-    }
-
-    &--laptop {
-      @include sm {
-        display: none;
+      &:hover {
+        background: #28253a;
       }
     }
   }
