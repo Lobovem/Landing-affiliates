@@ -26,14 +26,12 @@
     @include ul {
       padding-bottom: 60px;
     }
-
     @include xl {
       padding-top: 50px;
       padding-bottom: 56px;
 
       font-size: $font-size-36;
     }
-
     @include sm {
       padding-top: 34px;
       padding-bottom: 40px;
@@ -70,11 +68,9 @@
       background: #f185fb;
 
       filter: blur(75px);
-
       @include ul {
         left: 700px;
       }
-
       @include xl {
         left: 400px;
       }
@@ -87,14 +83,14 @@
 
 
   &__copyright-box {
-    padding: 86px 0 24px 0;
-    z-index: 1;
     position: relative;
+    z-index: 1;
+
+    padding: 86px 0 24px 0;
 
     @include xl {
       padding: 46px 0 34px 0;
     }
-
     @include sm {
       padding-top: 40px;
     }
