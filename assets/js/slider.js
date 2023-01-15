@@ -52,12 +52,12 @@ const swiper3 = new Swiper('.swiper', {
     enabled: false,
   },
 
+  autoplay: {
+    delay: 3000,
+    enabled: true,
+  },
   breakpoints: {
     200: {
-      autoplay: {
-        delay: 3000,
-        enabled: true,
-      },
       spaceBetween: 20,
 
       pagination: {
